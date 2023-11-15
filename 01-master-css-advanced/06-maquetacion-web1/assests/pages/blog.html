@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- from fontawesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/download.js" defer></script>
+    <title>portfolio</title>
+    
+</head>
+<body>
+<!--  <i class="fa-regular fa-star"></i> -->
+
+<!-- Main layout -->
+<div class="layout">
+<!-- sidebar, user info -->
+    <aside class="layout__aside">
+        <section class="aside__user-info">
+        <!-- general user info -->
+            <div class="user-info__general">
+                <div class="user-info__container-img">
+                    <img class="user-info__img" src="../img/my-profile2.JPG" alt="foto de perfil de usuario">
+                    <!-- here goes the shadow -->
+                </div>
+                    <h2 class="user-info__name">George</h2>
+                    <h4 class="user-info__job">FrontEnd developer</h4>
+            </div>
+        <!-- navbar -->
+        <nav class="layout__menu">
+            <ul class="menu__list">
+                <li class="menu__option">
+                    <a class="menu__link " href="../../index.html">
+                        <!-- this is how you use the icos from fontawesome -->
+                        <i class="menu__icon fa-solid fa-house"></i>
+                        <span class="menu__overlay">Home</span>
+                    </a>
+                </li>
+            
+                <li class="menu__option">
+                    <a class="menu__link" href="./about.html">
+                        <i class="menu__icon fa-solid fa-user"></i>
+                        <span class="menu__overlay">acerca de mi</span>
+                    </a>
+                </li>
+            
+                <li class="menu__option">
+                    <a class="menu__link" href="./curriculum.html">
+                        <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                        <span class="menu__overlay">curriculum</span>
+                    </a>
+                </li>
+            
+                <li class="menu__option">
+                    <a class="menu__link" href="./portfolio.html">
+                        <i class="menu__icon fa-solid fa-briefcase"></i>
+                        <span class="menu__overlay">Portafolio</span>
+                    </a>
+                </li>
+            
+                <li class="menu__option">
+                    <a class="menu__link menu__link--active" href="./blog.html">
+                        <i class="menu__icon fa-solid fa-book"></i>
+                        <span class="menu__overlay">blog</span>
+                    </a>
+                </li>
+
+                <li class="menu__option">
+                    <a class="menu__link" href="./contact.html">
+                        <i class="menu__icon fa-solid fa-contact-card"></i>
+                        <span class="menu__overlay">Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Social media links -->
+        <div class="user-info__links">
+            <ul class="links__social">
+                <li class="social__option">
+                    <a class="social__link" target="_blank" href="https://github.com/GeorgePhD/">
+                        <i class="social__icon fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social__option">
+                    <a class="social__link" target="_blank" href="https://www.linkedin.com/in/jorge-andrés-gamboa-fernández-front-end-developer-in-process-95219360">
+                        <i class="social__icon fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social__option">
+                    <a class="social__link" target="_blank" href="https://www.instagram.com/devel0pme/">
+                        <i class="social__icon fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- cv button -->
+            <div class="user-info__buttons">
+                <a class="user-info__btn" target="_blank" href="../resume/resume.pdf" id="download__pdf">Descargar CV</a>
+            </div>
+        <!-- footer -->
+            <footer class="user-info__footer">
+            &copy; 2023 lets.devel0pme
+            </footer>
+        </section>
+    </aside>
+
+
+        <!-- responsive menu starts -->
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+    <!-- responsive menu ends -->
+    <!-- main content -->
+    <main class="layout__content">
+        <section class="content__page content__blog">
+            <!-- here goes the new content in every html -->
+            <header class="blog__header">
+                <h1 class="blog__title">B<span class="title__color">log</span></h1>
+                <p class="personal-info__description blog__p">
+                    les dejo información completa sobre los temas más relevantes de programación, acá encontrarás muchas tecnologías necesarias para desarrollar o mejorar tu habilidades como programador front end.
+                </p>
+            </header>
+            <article class="blog__article">
+                <article class="articles__article">
+                    <div class="article__top">
+                        <div class="article__category">desarrollo</div>
+                        <a class="article__image-link" href="#">
+                            <div class="article__mask">
+                                <img class="article__img" src="../img/articulo-1.jpg" alt="blog image">
+                            </div>
+                            <div class="article__logo">
+                                <i class="article__icon fa-solid fa-book"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="article__bottom">
+                        <time class="article__date" datetime="2024-08-08">30/08/2024</time>
+                        <a href="#" class="article__image-link">
+                            <h2 class="article__title">Programación, la historia.</h2>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="articles__article">
+                    <div class="article__top">
+                        <div class="article__category">maquetación</div>
+                        <a class="article__image-link" href="#">
+                            <div class="article__mask">
+                                <img class="article__img" src="../img/articulo-2.jpg" alt="blog image">
+                            </div>
+                            <div class="article__logo">
+                                <i class="article__icon fa-solid fa-book"></i>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="article__bottom">
+                        <time class="article__date" datetime="2024-08-08">30/08/2024</time>
+                        <a href="#" class="article__image-link">
+                            <h2 class="article__title">Aprende HTML</h2>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="articles__article">
+                    <div class="article__top">
+                        <div class="article__category">estilos</div>
+                        <a class="article__image-link" href="#">
+                            <div class="article__mask">
+                                <img class="article__img" src="../img/articulo-3.jpg" alt="blog image">
+                            </div>
+                            <div class="article__logo">
+                                <i class="article__icon fa-solid fa-book"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="article__bottom">
+                        <time class="article__date" datetime="2024-08-08">30/08/2024</time>
+                        <a href="#" class="article__image-link">
+                            <h2 class="article__title">Aprende CSS</h2>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="articles__article">
+                    <div class="article__top">
+                        <div class="article__category">programación</div>
+                        <a class="article__image-link" href="#">
+                            <div class="article__mask">
+                                <img class="article__img" src="../img/articulo-4.jpg" alt="blog image">
+                            </div>
+                            <div class="article__logo">
+                                <i class="article__icon fa-solid fa-book"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="article__bottom">
+                        <time class="article__date" datetime="2024-08-08">30/08/2024</time>
+                        <a href="#" class="article__image-link">
+                            <h2 class="article__title">Aprende JavaScript</h2>
+                        </a>
+                    </div>
+                </article>
+                <article class="articles__article">
+                    <div class="article__top">
+                        <div class="article__category">Práctica de habilidades</div>
+                        <a class="article__image-link" target="_blank" href="https://www.leetcode.com/">
+                            <div class="article__mask">
+                                <img class="article__img" src="../img/articulo-4.jpg" alt="blog image">
+                            </div>
+                            <div class="article__logo">
+                                <i class="article__icon fa-solid fa-book"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="article__bottom">
+                        <time class="article__date" datetime="2024-08-08">30/08/2024</time>
+                        <a target="_blank" href="https://www.leetcode.com/" class="article__image-link">
+                            <h2 class="article__title">Ponte a prueba en leetcode.com</h2>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="articles__article">
+                    <div class="article__top">
+                        <div class="article__category">práctica tus conocimientos</div>
+                        <a class="article__image-link" href="#">
+                            <div class="article__mask">
+                                <img class="article__img" src="../img/articulo-4.jpg" alt="blog image">
+                            </div>
+                            <div class="article__logo">
+                                <i class="article__icon fa-solid fa-book"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="article__bottom">
+                        <time class="article__date" datetime="2024-08-08">30/08/2024</time>
+                        <a href="#" class="article__image-link">
+                            <h2 class="article__title">Aprende a maquetar una web</h2>
+                        </a>
+                    </div>
+                </article>
+
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+    </main>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+body {
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+.flex-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(245, 200, 140);
+    padding: 10px;
+    border: 1px solid rgb(54, 48, 42);
+    flex-flow: row wrap; /* this replaces flex-direction and flex-wrap */
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+   /*  justify-content: space-between; */
+    
+}
+.box {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+    line-height: 120px;
+    text-align: center;
+    
+}
+.c1 {
+    background-color: aqua;
+    flex-grow: 0;
+}
+.c2 {
+    background-color: rgb(114, 128, 128);
+    flex-grow: 2;
+}
+.c3 {
+    background-color: rgba(14, 238, 238, 0.474);
+    flex-grow: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

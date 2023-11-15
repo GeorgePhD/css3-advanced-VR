@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.box {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 10px #8f8c8c;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #b3aaaa;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

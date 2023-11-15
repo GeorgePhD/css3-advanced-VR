@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BEM = Block => Element => Modifier.</h1>
+
+    <p>.block__element--modifier</p>
+    <p>.block</p>
+    <p>.block__element</p>
+    <p>.block__element--modifier</p>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>card content</p>
+            <a href="">link</a>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>card content</p>
+            <a href="">link</a>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>card content</p>
+            <a href="">link</a>
+        </div>
+        <div class="card">
+            <h3>Card 4</h3>
+            <p>card content</p>
+            <a href="">link</a>
+        </div>
+        
+    </section>
+
+    <section class="cards">
+        <div class="cards__card">
+            <h3 class="card__h3">Card 1</h3>
+            <p class="card__p">card content</p>
+            <a class="card__a card__a--red" href="">link</a>
+        </div>
+        <div class="cards__card">
+            <h3 class="card__h3">Card 2</h3>
+            <p class="card__p">card content</p>
+            <a class="card__a card__a--lightblue" href="">link</a>
+        </div>
+        <div class="cards__card">
+            <h3 class="card__h3">Card 3</h3>
+            <p class="card__p">card content</p>
+            <a class="card__a card__a--yellow" href="">link</a>
+        </div>
+        <div class="cards__card">
+            <h3 class="card__h3">Card 4</h3>
+            <p class="card__p">card content</p>
+            <a class="card__a card__a--green" href="">link</a>
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>

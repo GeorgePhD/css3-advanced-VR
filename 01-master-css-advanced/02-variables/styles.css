@@ -1,0 +1,18 @@
+:root {
+    --color-principal: rgb(0, 0, 0);
+    --font-family-h1: "roboto";
+    --font-family-p: arial;
+    --font-size-p: 25px;
+
+} 
+
+h1 {
+    color: var(--color-principal);
+    font-family: var(--font-family-h1);
+}
+
+p {
+    color: var(--color-principal);
+    font-family: var(--font-family-p);
+    font-size: var(--font-size-p);
+}

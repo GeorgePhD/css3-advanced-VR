@@ -1,0 +1,1 @@
+git init was done inside the folder 06-maquetacion-web1, then a new branch with the name august9 was created, there was no main nor master branch. the a new branch named main was created and merged to the august9 one. after that, the august9 branch was deleted. this info is written just in case there are any issues in the future.
