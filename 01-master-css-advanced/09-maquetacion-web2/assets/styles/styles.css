@@ -390,8 +390,9 @@ body {
 .services__subtitle,
 .projects__subtitle,
 .stats__subtitle,
-.reviews__subtitle {
-    font-size: 2rem;
+.reviews__subtitle,
+.clients__subtitle {
+    font-size: 4rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
     color: var(--color-subtitle);
@@ -399,7 +400,8 @@ body {
 .services__title,
 .projects__title,
 .stats__title,
-.reviews__title {
+.reviews__title,
+.clients__title {
     color: var(--color-title);
     font-size: 6.4rem;
     line-height: 1.2;
@@ -663,10 +665,12 @@ body {
 .stats__header {
     text-align: center;
 }
-.stats__title {
+.stats__title,
+.clients__title {
     color: var(--color-secondary);
 }
-.stats__description {
+.stats__description,
+.clients__description {
     font-size: 2rem;
     color: var(--color-text-description);
     width: 50%;
@@ -798,4 +802,56 @@ body {
 }
 /* layout__reviews styles end here */
 
+/* styles only for best clients start here */
+.layout__clients {
+    position: relative;
+    z-index: 1;
+}
+.clients__header {
+    text-align: left;
+}
+.clients__title {
+    width: 50%;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.clients__description {
+    width: 40%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+.clients__subtitle {
+
+}
+.clients__logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.clients__item {
+    width: calc(25% - 3rem)
+}
+.clients__img {
+    filter: grayscale(100%);
+    opacity: 0.3;
+    transition: all 300ms ease-in-out;
+}
+.clients__item:hover > .clients__img {
+    opacity: 1;
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.client-shapes__item {
+    position: absolute;
+    z-index: -1;
+    top: 10rem;
+    right: 0;
+}
+/* styles only for best clients end here */
 
