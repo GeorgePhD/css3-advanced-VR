@@ -649,12 +649,14 @@ body {
 }
 /* layout projects end here */
 
-/* statistics layout starts here */
-.layout__stats {
+/* statistics layout starts here, also best clients */
+.layout__stats,
+.layout__clients {
     background-color: var(--color-bg-dark);
     padding: 10rem 6rem;
 }
-.stats__container {
+.stats__container,
+.clients__container {
     max-width: var(--mx-width);
     margin: 0 auto;
 }
