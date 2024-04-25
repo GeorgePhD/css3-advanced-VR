@@ -393,7 +393,8 @@ body {
 .stats__subtitle,
 .reviews__subtitle,
 .clients__subtitle,
-.news__subtitle {
+.news__subtitle,
+.contact__subtitle {
     font-size: 4rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
@@ -404,7 +405,8 @@ body {
 .stats__title,
 .reviews__title,
 .clients__title,
-.news__title {
+.news__title,
+.contact__title {
     color: var(--color-title);
     font-size: 6.4rem;
     line-height: 1.2;
@@ -826,9 +828,6 @@ body {
     margin: 0;
     margin-bottom: 4rem;
 }
-.clients__subtitle {
-
-}
 .clients__logos {
     display: flex;
     flex-direction: row;
@@ -951,4 +950,100 @@ body {
     font-size: 1.5rem;
     margin-top: 1rem;
 }
+.new-shapes__item {
+    position: absolute;
+    z-index: -1;
+}
+.new-shapes--shape1 {
+    top: 14rem;
+    left: 31.5rem;
+
+}
+.new-shapes--shape2 {
+    top: 12rem;
+    right: 0;
+}
+.new-shapes--shape3 {
+    bottom: 8rem;
+    left: 0;
+}
+.new-shapes--shape4 {
+    bottom: 6rem;
+    right: 50rem;
+}
 /* news styles end here */
+/* contact styles start here */
+.layout__contact {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0;
+    padding-top: 14rem;
+    padding-bottom: 10rem;
+    background-color: var(--color-primary);
+}
+.contact__container {
+    max-width: var(--mx-width);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.contact__header {
+    margin-bottom: 6.5rem;
+    text-align:center;
+}
+.contact__title {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5.5rem;
+    font-size: 6.4rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+.contact__subtitle {
+    color: var(--color-bg-btn);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    font-size: 2.5rem;
+}
+.contact__btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 2rem;
+    padding: 2.3rem 5.5rem;
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+.contact__btn:hover {
+    background-color: var(--color-bg-btn);
+}
+.contact__images {
+    position: relative;
+    text-align: center;
+    border-bottom:  1px solid var(--color-borders);
+}
+.contact__thumb {
+    display: inline-block;
+    position: relative;
+}
+.contact__thumb--chat {
+    margin-right: -18rem;
+    bottom: -0.8rem;
+}
+.contact__thumb--laptop {
+    position: absolute;
+    bottom: 0;
+    left: 16rem;
+}
+.contact__thumb--mobile {
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+}
+/* contact styles end here */
