@@ -33,6 +33,30 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     let close = document.querySelector(".menu-mobile__close");
     close.addEventListener('click', toggleMenu);
+
+    let menu_item = document.querySelectorAll('.menu-mobile__item');
+
+    menu_item.forEach(item => {
+
+        item.addEventListener('click', (e) => {
+
+            let submenu = item.lastElementChild;
+            console.log(submenu)
+
+            if (submenu.className === 'menu-mobile__submenu-mobile') {
+
+                if (submenu.style.display === 'block') {
+
+                    submenu.style.display = 'none';
+                } else {
+
+                    submenu.style.display = 'block';
+                }
+            }
+
+        })
+
+    })
 });
 
 
