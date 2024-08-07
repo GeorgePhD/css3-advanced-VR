@@ -1,0 +1,65 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-size: 10px;
+    font-family: 'Changa', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box; /* mozilla compatibility */
+    -ie-box-sizing: border-box; /* internet explorer */
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vw;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+
+}
+p a {
+    display: inline;
+}
+img, video, iframe, picture, figure {
+    display: block;
+    max-width: 100%;
+}
+form, input, select, textarea, button, label {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
