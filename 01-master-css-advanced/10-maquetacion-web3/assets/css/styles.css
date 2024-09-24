@@ -1,10 +1,33 @@
+/* variables */
+:root {
+    --main-color: #fff;
+    --secondary-color: #329153;
+}
+/* main styles */
+html {
+    font-size: 10px;
+}
 body {
-    font-family: montserrat;
-    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    font-family: "montserrat", "helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+
+
 }
-h1{
-    font-size: 4rem;
-} 
-p {
-    font-size: 2rem;
+
+/* decorative bar */
+.decoration-bar {
+    width: 100%;
+    min-height: 2.5rem;
+    background-color: var(--secondary-color);
 }
+
+/* structure and layout styles */
+
+
+
+
+
+
+
