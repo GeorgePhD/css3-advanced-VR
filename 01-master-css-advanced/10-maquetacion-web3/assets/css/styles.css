@@ -2,6 +2,7 @@
 :root {
     --main-color: #fff;
     --secondary-color: #329153;
+    --color-bg-navbar: #333946;
 }
 /* main styles */
 html {
@@ -24,6 +25,119 @@ body {
 }
 
 /* structure and layout styles */
+.layout {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "marquee marquee"
+    "slider slider"
+    "high high"
+    "videos videos"
+    "carousel carousel"
+    "main aside"
+    ;
+    grid-template-columns: 70% 30%;
+    width: 55vw;
+    min-width: 100rem;
+    margin: 0 auto;
+}
+
+/* header styles */
+.layout__header {
+    grid-area: header;
+
+    width: 100%;
+    min-width: 100%;
+    padding: 2rem 0; 
+
+    & .header__img {
+        width: 17rem;
+    }
+}
+/* .layout__header .header__img {
+    width: 57rem;
+}
+.header__img img {
+    width: 107rem;
+} */
+/* nav styles */
+.layout__nav {
+    grid-area: nav;
+
+    width: 100%;
+    position: relative;
+}
+.nav__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 5rem;
+    max-height: 5rem;
+    width: 100%;
+    color: var(--main-color);
+    background-color: var(--color-bg-navbar);
+}
+.navbar__submenu {
+    display: none;
+}
+.carousel__container-img {
+    display: none;
+}
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar__item {
+    padding: 1.5rem 0;    
+}
+.navbar__item:hover {
+    background-color: var(--secondary-color);
+}
+.navbar__link {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+}
+/* marquee styles */
+.layout__marquee {
+    grid-area: marquee;
+}
+
+/* slider styles */
+.layout__slider {
+    grid-area: slider;
+}
+
+/* high styles */
+.layout__highlights {
+    grid-area: high;
+}
+
+/* videos styles */
+.layout__videos {
+    grid-area: videos;
+}
+
+/* carousel styles */
+.layout__carousel-games {
+    grid-area: carousel;
+}
+
+/* main styles */
+.layout__main {
+    grid-area: main;
+}
+
+/* aside styles */
+.layout__aside {
+    grid-area: aside;
+}
+
 
 
 
