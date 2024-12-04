@@ -460,7 +460,8 @@ body {
 .highlights__img:hover {
     transform: scale(1.1);
 }
-.highlights__category {
+.highlights__category,
+.game__container-category {
     position: absolute;
     left: 0;
     bottom: 1rem;
@@ -469,10 +470,12 @@ body {
     background-color: var(--secondary-color);
     transition: all 300ms ease-in-out;
 }
-.highlights__category:hover {
+.highlights__category:hover,
+.game__container-category:hover {
     background-color: var(--color-bg-navbar);
 }
-.highlights__name-category {
+.highlights__name-category,
+.game__category {
     font-weight: 400;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -508,7 +511,8 @@ body {
 .highlights__author,
 .main-video__author,
 .video__author,
-.main-post__container-author {
+.main-post__container-author,
+.news__author {
     font-weight: 700;
     color: var(--secondary-color);
     font-size: 1.3rem;
@@ -518,7 +522,8 @@ body {
 .highlights__date,
 .main-video__date,
 .video__date,
-.main-post__date {
+.main-post__date,
+.news__date {
     font-weight: 700;
     color: rgb(167, 166, 166);
     font-size: 1.1rem;
@@ -535,19 +540,23 @@ body {
 }
 
 .highlights__footer-post,
-.footer-post__container {
+.footer-post__container,
+.footer-info__container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-.footer-post__container {
+.footer-post__container,
+.footer-info__container {
     gap: 1rem;
 }
 .footer-post__views,
 .main-video__views,
 .main-video__comments,
-.footer-post__comments {
+.footer-post__comments,
+.main-post__views,
+.main-post__comments {
     display: inline-block;
     gap: 0.5rem;
     color: var(--color-text-marquee);
@@ -557,7 +566,9 @@ body {
 .footer-post__views > .fa-solid,
 .footer-post__comments > .fa-solid,
 .main-video__views > .fa-solid,
-.main-video__comments > .fa-solid {
+.main-video__comments > .fa-solid,
+.main-post__views > .fa-solid,
+.main-post__comments > .fa-solid  {
     margin-right: 0.2rem;
     font-size: 1.2rem;
 }
@@ -566,7 +577,8 @@ body {
     display: inline;
 }
 
-.footer-post__read-more {
+.footer-post__read-more,
+.main-post__read-more {
     border: 1px solid var(--color-text-marquee);
     font-weight: 400;
     font-size: 1.1rem;
@@ -575,7 +587,8 @@ body {
     margin-bottom: 2rem;
 }
 
-.footer-post__read-more:hover {
+.footer-post__read-more:hover,
+.main-post__read-more:hover {
     border: 1px solid #ffffff;
     background-color: var(--secondary-color);
     color: #ffffff;
@@ -872,14 +885,176 @@ body {
     color: var(--secondary-color);
 }
 
-.main-post__meta {
+.main-post__meta,
+.news__data {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin-bottom: 1rem;
     justify-content: space-between;
 }
+
+.main-post__description {
+    font-size: 1.3rem;
+    color: var(--color-titles);
+    margin-bottom: 1rem;
+}
+
+.main-post__footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.news__image {
+    overflow: hidden;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.news__img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+
+.news__image:hover .news__img {
+    transform: scale(1.1);
+}
+
+.news__detail {
+    width: 75%;
+
+}
+
+.news__title-post {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.news__link-title {
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.news__link-title:hover {
+    color: var(--secondary-color);
+}
+
+.news__data {
+    justify-content: left;
+    gap: 1rem;
+}
+
+.news__post {
+    display: flex;
+    gap: 1rem;
+}
+.news__post {
+    flex-basis: calc(48% - 2rem);
+}
+
+.news__title-post > a {
+    font-size: 1.6rem;
+}
+
+.news__title-post:hover {
+    color: var(--secondary-color);
+}
+
 /* news styles end here */
+
+
+/* games section starts here */
+.main__games {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.games__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.games__game {
+    position: relative;
+    flex-basis: calc(50% - 1.5rem);
+}
+
+.game__container-image {
+    overflow: hidden;
+}
+
+.game__link-image {
+    width: 100%;
+}
+
+.game__img {
+    transition: all 300ms;
+}
+
+.game__img:hover {
+    transform: scale(1.1);
+}
+
+.game__rating {
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: 1;
+}
+
+.game__details {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    padding-right: 5rem;
+    background-color: rbga(0,0,0,0.2);
+
+}
+
+.game__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 999;
+    color: red;
+}
+
+.game__link-title {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: var(--main-color);
+    transition: all 300ms ease-in-out;
+    padding: 1rem;
+}
+
+.game__link-title:hover {
+    text-shadow: 1px 1px 0 0 grey;
+}
+/* games section ends here */
+
+/*latest articles start here */
+
+/*latest articles end here */
+
 
 /* aside styles */
 .layout__aside {
