@@ -9,6 +9,12 @@
     --color-bg-marquee: #eee;
     --color-text-marquee: #7C7C7C;
     --color-titles: #333333;
+    --color-bg-aside: #F5F5F5;
+    --color-twitter: #2FC2EF;
+    --color-facebook: #1877F2;
+    --color-youtube: #FF0000;
+    --color-instagram: #E1306C;
+    --color-linkedin: #0077B5;
 }
 /* main styles */
 html {
@@ -439,29 +445,35 @@ body {
     grid-area: high;
     margin-bottom: 3rem;
 }
-.highlights__posts {
+.highlights__posts,
+.posts__container {
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 3rem;
 }
-.highlights__post {
+.highlights__post,
+.posts__post {
     flex-basis: 33%;
     height: 100%;
     border-bottom: 1px solid var(--color-bg-marquee)
 }
-.highlights__image {
+.highlights__image,
+.post__container-image {
     position: relative;
     overflow: hidden;
 }
-.highlights__img {
+.highlights__img,
+.post__img {
     transition: all 300ms ease-in-out;
 }
-.highlights__img:hover {
+.highlights__img:hover,
+.post__img:hover {
     transform: scale(1.1);
 }
 .highlights__category,
-.game__container-category {
+.game__container-category,
+.post__container-category {
     position: absolute;
     left: 0;
     bottom: 1rem;
@@ -471,18 +483,21 @@ body {
     transition: all 300ms ease-in-out;
 }
 .highlights__category:hover,
-.game__container-category:hover {
+.game__container-category:hover,
+.post__container-category:hover {
     background-color: var(--color-bg-navbar);
 }
 .highlights__name-category,
-.game__category {
+.game__category,
+.post__category {
     font-weight: 400;
     font-size: 1.1rem;
     text-transform: uppercase;
     display: block;
     color: var(--main-color);
 }
-.highlights__title a {
+.highlights__title a,
+.post__title a {
     font-size: 1.9rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -491,16 +506,19 @@ body {
 .highlights__title a:hover {
     color: var(--secondary-color);
 }
-.highlights__link {
+.highlights__link,
+.post__link {
     color: var(--color-titles);
     transition: all 300ms ease-in-out;
 }
 
-.highlights__link:hover {
+.highlights__link:hover,
+.post__link:hover {
     color: var(--secondary-color);
 }
 
-.highlights__meta {
+.highlights__meta,
+.post__meta {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -512,7 +530,8 @@ body {
 .main-video__author,
 .video__author,
 .main-post__container-author,
-.news__author {
+.news__author,
+.post__author {
     font-weight: 700;
     color: var(--secondary-color);
     font-size: 1.3rem;
@@ -523,7 +542,8 @@ body {
 .main-video__date,
 .video__date,
 .main-post__date,
-.news__date {
+.news__date,
+.post__date {
     font-weight: 700;
     color: rgb(167, 166, 166);
     font-size: 1.1rem;
@@ -531,7 +551,8 @@ body {
     text-transform: uppercase;
 }
 
-.highlights__description {
+.highlights__description,
+.post__description {
     color: var(--color-titles);
     font-size: 1.3rem;
     margin-bottom: 1rem;
@@ -541,14 +562,16 @@ body {
 
 .highlights__footer-post,
 .footer-post__container,
-.footer-info__container {
+.footer-info__container,
+.post__footer-post {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
 .footer-post__container,
-.footer-info__container {
+.footer-info__container,
+.footer-post__container {
     gap: 1rem;
 }
 .footer-post__views,
@@ -578,7 +601,8 @@ body {
 }
 
 .footer-post__read-more,
-.main-post__read-more {
+.main-post__read-more,
+.post__read-more {
     border: 1px solid var(--color-text-marquee);
     font-weight: 400;
     font-size: 1.1rem;
@@ -588,7 +612,8 @@ body {
 }
 
 .footer-post__read-more:hover,
-.main-post__read-more:hover {
+.main-post__read-more:hover,
+.post__read-more:hover {
     border: 1px solid #ffffff;
     background-color: var(--secondary-color);
     color: #ffffff;
@@ -1052,18 +1077,161 @@ body {
 /* games section ends here */
 
 /*latest articles start here */
+.main__post {
+    width: 100%;
+    margin-bottom: 3rem;
+}
 
+.posts__list-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+}
+
+.list-header--small {
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.posts__container {
+    flex-wrap: wrap;
+}
+
+.posts__post {
+    flex-basis: calc(50% - 2rem);
+}
 /*latest articles end here */
 
 
 /* aside styles */
 .layout__aside {
     grid-area: aside;
+    background-color: var(--color-bg-aside);
+    padding: 1.5rem;
+    height: fit-content;
+}
+.login__container {
+    width: 100%;
 }
 
+.login__form {
+    width: 100%;
+    margin-top: 3rem;
+}
+.form__container-user-name,
+.form__container-password,
+.form__container-remember {
+    width: 100%;
+    margin: 1rem 0;
+}
 
+.form__label {
+    font-weight: 600;
 
+}
 
+.form__input {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.10);
+    padding: 0.5rem;
+}
+
+.form__container-remember > .form__input,
+.form__container-remember > .form__label {
+    width: auto;
+    display: inline;
+}
+.form__submit {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border: 1px solid rgba(0,0,0,0.10);
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.login__register,
+.login__lost-password {
+    display: block;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* social aside styles start here */
+
+.aside__social {
+    margin-top: 23rem;
+}
+.social__list {
+    width: 100%;
+}
+
+.social__item {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    color: var(--main-color);
+    transition: all 300ms ease-in-out;
+    background-color: var(--color-facebook);
+}
+
+.social__item:hover {
+    padding-left: 3rem;
+}
+
+.social__link { 
+    display: flex;
+    flex-direction: row;
+    color: var(--main-color);
+}
+
+.social__icon {
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+}
+
+.social__icon > .fa-brands {
+    font-size: 3rem;
+}
+
+.social__number,
+.social__word {
+    font-size: 1.3rem;
+}
+
+.social__word {
+    opacity: 0.6;
+}
+
+.social__number {
+    margin-bottom: -0.7rem
+}
+
+.linkedin {
+    background-color: var(--color-linkedin);
+}
+.twitter {
+    background-color: var(--color-twitter);
+}
+.youtube {
+    background-color: var(--color-youtube);
+}
+.instagram {
+    background-color: var(--color-instagram);
+}
+.facebook {
+    background-color: var(--color-facebook);
+}
+/* social aside styles end here */
 
 
 
