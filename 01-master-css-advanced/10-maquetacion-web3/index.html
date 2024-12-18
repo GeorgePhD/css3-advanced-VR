@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/fonts/montserrat/montserrat.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>Noticias de video juegos - maquetación 3</title>
 </head>
 
@@ -27,7 +28,76 @@
         </header>
 
         <section class="layout__nav">
+
+
+
+
+
             <nav class="nav__navbar">
+
+                <!-- responsive menu button -->
+                <div class="navbar__mobile-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+
+                <!-- responsive menu -->
+                <ul class="navbar__mobile-list">
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">Noticias</a>
+                            <div class="mobile-list__icon" id="social__icon1">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="mobile-list__msubmenu" id="submenu1">
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__li">Video Juegos</a>
+                            </li>
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__li">Cine</a>
+                            </li>
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__li">Tecnologías</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">Analisis</a>
+                    </li>
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">Juegos</a>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">Categorias</a>
+                            <div class="mobile-list__icon" id="social__icon1">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="mobile-list__msubmenu" id="submenu1">
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__li">Accion</a>
+                            </li>
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__li">Lucha</a>
+                            </li>
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__li">Sandbox</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">Ranking</a>
+                    </li>
+                </ul>
+
+
+                <!-- desktop navigation -->
+
+
                 <ul class="navbar__list">
                     <li class="navbar__item">
                         <a href="#" class="navbar__link">Noticias</a>
@@ -382,6 +452,8 @@
                         </div>
                     </li>
                 </ul>
+
+                <!-- search -->
                 <form class="navbar__search">
                     <input type="text" class="search__input" name="search" placeholder="Buscar" />
 
@@ -476,7 +548,7 @@
             </article>
             <article class="slider__container slider__container--slider-2">
                 <a href="#" class="slider__link">
-                    <img src="./assets/images/slider-2.jpg" alt="slider" class="slider__img" />
+                    <img src="./assets/images/slider-2.jpg" alt="slider" class="slider__img slider-img2" />
                 </a>
 
                 <div class="slider__info">
@@ -592,10 +664,7 @@
                             <span class="highlights__date">10/10/2021</span>
                         </div>
                         <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Laudantium, quod sunt amet magni at architecto ex facere. Assumenda optio fugiat ex. Dolorum
-                            illo ea aspernatur eum quia, nulla in unde debitis aperiam possimus iure libero mollitia
-                            magnam ad corrupti veritatis. A, voluptate sint velit vitae porro fugit corporis voluptatem!
-                            Repellendus.
+
                         </p>
                         <footer class="highlights__footer-post">
                             <div class="footer-post__container">
@@ -632,10 +701,6 @@
                             <span class="highlights__date">10/10/2021</span>
                         </div>
                         <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Laudantium, quod sunt amet magni at architecto ex facere. Assumenda optio fugiat ex. Dolorum
-                            illo ea aspernatur eum quia, nulla in unde debitis aperiam possimus iure libero mollitia
-                            magnam ad corrupti veritatis. A, voluptate sint velit vitae porro fugit corporis voluptatem!
-                            Repellendus.
                         </p>
                         <footer class="highlights__footer-post">
                             <div class="footer-post__container">

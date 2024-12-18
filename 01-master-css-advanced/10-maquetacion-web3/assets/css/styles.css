@@ -224,14 +224,16 @@ body {
     opacity: 1;
     padding: 0.5rem;
 }
-.navbar__btn-search {
+.navbar__btn-search,
+.navbar__mobile-btn {
     background-color: var(--secondary-color);
     padding: 0.8rem 1.3rem;
     height: 5rem;
     display: flex;
     align-items: center;
 }
-.navbar__btn-search .fa-solid {
+.navbar__btn-search .fa-solid,
+.navbar__mobile-btn .fa-solid {
     cursor: pointer;
     color: var(--main-color);
     font-size: 2.7rem;
