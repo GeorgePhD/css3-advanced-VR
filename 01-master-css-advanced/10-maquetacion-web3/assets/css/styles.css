@@ -30,7 +30,9 @@ body {
 
 
 }
-
+.fa-chevron-down {
+    cursor: pointer;
+}
 /* decorative bar */
 .decoration-bar {
     width: 100%;
